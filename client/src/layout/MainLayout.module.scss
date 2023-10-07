@@ -1,0 +1,11 @@
+.mainLayout {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  @media (max-width: 567px) {
+    margin-top: 60px;
+  }
+}
