@@ -1,7 +1,5 @@
-import React from "react";
 import { MainLayout } from "../../layout/MainLayout";
-type HomeProps = {};
-export const Home: React.FC<HomeProps> = ({}) => {
+export const Home = () => {
   return (
     <MainLayout>
       <div>Home</div>

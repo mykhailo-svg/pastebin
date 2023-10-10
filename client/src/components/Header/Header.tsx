@@ -1,12 +1,13 @@
-import styles from "./Header.module.scss";
-import Logo from "../../shared/assets/logo.svg";
 import {
   BiSearchAlt as SearchIcon,
   BiSolidAddToQueue as AddIcon,
 } from "react-icons/bi";
+import { Link } from "react-router-dom";
+import Logo from "../../shared/assets/logo.svg";
 import { LoginButton } from "../../shared/ui/Buttons/LoginButton/LoginButton";
 import { RegisterButton } from "../../shared/ui/Buttons/RegisterButton/RegisterButton";
-import { Link } from "react-router-dom";
+import { routePath } from "../../shared/config/routePath";
+import styles from "./Header.module.scss";
 export const Header = () => {
   return (
     <header className={styles.header}>
@@ -15,9 +16,9 @@ export const Header = () => {
           <div>
             <img src={Logo} alt="Logo" />
           </div>
-          <Link to="/" className={styles.createPasteButton}>
+          <Link to={routePath.HOME} className={styles.createPasteButton}>
             <AddIcon fontSize="1.7em" color="var(--main-color)" />
-            Paste
+            <span>Paste</span>
           </Link>
 
           <div className={styles.searchBlock}>
