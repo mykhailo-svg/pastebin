@@ -2,4 +2,17 @@
     margin:15px 0px;
     padding-bottom:10px;
     border-bottom: var(--light-green) 2px solid;
+    display: flex;
+    gap: 15px;
+    path{
+        color: var(--lighter-main-color);
+        
+    }
+}
+.mainContainer {
+}
+.title{
+    font-size: 19px;
+    color: var(--light-green);
+    padding-bottom:7px;
 }
