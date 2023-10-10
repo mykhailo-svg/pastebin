@@ -1,5 +1,4 @@
-import React from "react";
-type RegisterButtonProps = {};
-export const RegisterButton: React.FC<RegisterButtonProps> = ({}) => {
-  return <div>Sign up</div>;
+import styles from "./RegisterButton.module.scss";
+export const RegisterButton = ({}) => {
+  return <button className={styles.button}>Sign up</button>;
 };
